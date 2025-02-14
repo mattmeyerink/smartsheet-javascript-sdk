@@ -71,7 +71,7 @@ function buildLoggerFromContainer(container) {
       "'smartsheet' inside.");
 }
 
-exports.createClient = function(clientOptions) {
+export const createClient = function(clientOptions) {
   var requestor = buildRequestor(clientOptions);
 
   var options = {
@@ -107,7 +107,7 @@ exports.createClient = function(clientOptions) {
   };
 };
 
-exports.smartSheetURIs = {
+export const smartSheetURIs = {
   defaultBaseURI: 'https://api.smartsheet.com/2.0/',
   govBaseURI: 'https://api.smartsheetgov.com/2.0/',
   euBaseURI: 'https://api.smartsheet.eu/2.0/'
